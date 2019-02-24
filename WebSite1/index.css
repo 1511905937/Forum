@@ -1,0 +1,75 @@
+﻿#container {
+    width: 100%;
+    height: 1200px;
+    margin: 2px;
+    padding: 0px;
+}
+
+#register {
+    font-size: 12px;
+    font-family: 新宋;
+    color: lightblue;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo {
+    background: url(image/10.jpg) center center no-repeat;
+    width: 100%;
+    height: 15%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner {
+    background-color:#f1b0b0;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 4%;
+}
+
+    #banner ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #banner ul li {
+            float: left;
+            text-align: center;
+            width: 14.28%;
+        }
+
+            #banner ul li a {
+                display: block;
+                padding: 13px 11px 17px 10px;
+            }
+
+                #banner ul li a:hover {
+                    background-color: #f3c3c3;
+                }
+
+.Userdiv {
+    background-color: pink;
+    width: 20%;
+    height: 77%;
+    float: left;
+}
+.gridview {
+   float:left;
+    width:60%;
+    height: 77%;
+}
+.guanggao {
+    float:left;
+    width: 20%;
+    height: 77%;
+}
+#small {
+    margin: 50% 0px;
+    width: 100%;
+    height: 30%;
+}

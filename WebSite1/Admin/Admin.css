@@ -1,0 +1,29 @@
+﻿
+#container {
+    margin: 0px;
+    width: 100%;
+    height: 1000px;
+    background-color: #f1f0d7;
+}
+
+#top {
+    width: 100%;
+    height: 32%;
+    background: url(../image/3.gif ) no-repeat 50px 0px;
+}
+
+#left {
+    width: 25%;
+    height: 66%;
+    float: left;
+    background-color: #f1f0d7;
+}
+
+#right {
+    width: 74%;
+    height: 66%;
+    float: right;
+    background-color:#f7dff6;
+}
+
+

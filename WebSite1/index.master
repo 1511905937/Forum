@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="index.master.cs" Inherits="index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="index.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" >
+    function show()                           //隐藏div和在div中添加一个html标签
+	{
+		document.getElementById('kind').style.display="";
+	}
+	function hidden()
+	{
+		this.style.display="none";
+	}
+    </script>
+    <style>
+        #kind{
+            background-color :#e1e88f;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    <form id="form2" runat="server">
+    
+    <div id="container" class="auto-style4">
+    <div id="register">
+     &nbsp;<asp:Button ID="Button1" runat="server" BackColor="#FFFFCC" BorderColor="White" OnClick="Button1_Click" Text="登录" />
+        <asp:Button ID="Button2" runat="server" BackColor="#FFFFCC" BorderColor="White" OnClick="Button2_Click" Text="注册" />
+    </div>
+    <div id="logo" class="auto-style3">
+   
+    </div>
+    <div id="banner">
+     <ul>
+	  <li ><a href="index3.aspx?kind=生活">生活</a></li>
+	  <li ><a href="index3.aspx?kind=动漫">动漫</a></li>
+	  <li ><a href="index3.aspx?kind=美食">美食</a></li>
+	  <li ><a href="index3.aspx?kind=星族">星族</a></li>
+	  <li ><a href="index3.aspx?kind=旅游" class="auto-style2">旅游</a></li>
+	  <li><a href="index3.aspx?kind=高考" class="auto-style6">高考</a></li>
+	  <li><a href="index3.aspx?kind=购物">购物</a></li>
+	 </ul>
+    </div>
+        <div class="guanggao">
+
+        </div>
+        <div class="gridview">
+            搜索种类：&nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="搜索" OnClick="Button3_Click" />
+             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+        <div class="Userdiv">
+            
+            <div id="small">
+                  <a href="User/add_paste.aspx">
+                      我要发帖</a>
+                  <a href="User/view_user.aspx">个人中心</a>
+                <a href="Admin/Admin_Paste.aspx">管理贴吧</a>&nbsp;<br /><br />
+                <p  onclick="show()">热门分类</p>&nbsp;
+                <div id="kind" style="display :none">
+                    <a href="index3.aspx?kind=留学">留学</a>
+	                 <a href="index3.aspx?kind=段子">段子</a>
+	                  <a href="index3.aspx?kind=IT">IT</a><br />
+	                 <a href="index3.aspx?kind=金融">星族</a>
+	                <a href="index3.aspx?kind=大学" class="auto-style2">金融</a>
+	                <a href="index3.aspx?kind=潮流" class="auto-style6">潮流</a><br />
+	                <a href="index3.aspx?kind=艺术">艺术</a>
+                </div>
+                </div>
+             </div> 
+        <br />
+        </div> 
+   
+    
+    </form>
+</body>
+</html>
